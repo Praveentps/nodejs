@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Praveentps/nodejs/issues"
   },
-  "homepage": "https://github.com/Praveentps/nodejs#readme"
+  "homepage": "https://github.com/Praveentps/nodejs#readme",
+  "dependencies": {
+    "winston": "^2.2.0"
+  }
 }
