@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "explore nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Praveentps/nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mocha",
+    "supertest"
+  ],
+  "author": "Praveen Talawar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Praveentps/nodejs/issues"
+  },
+  "homepage": "https://github.com/Praveentps/nodejs#readme"
+}
