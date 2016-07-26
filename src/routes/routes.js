@@ -1,8 +1,14 @@
 var controller = require('../modules/controller');
-var routes = (function (app) {
+var database = require('../modules/database');
+var routes = (function (app,db) {
 
 app.get('/', function (request, response) {
    controller.read(request,response);
+})
+
+//get the data
+app.get('/data/*', function (request, response) {   
+   database.findRestaurants(db,request,response);
 })
 
 // This responseponds a POST request
