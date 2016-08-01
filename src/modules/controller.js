@@ -7,7 +7,7 @@ module.exports = {
   httpResponse.send('Hello World');
   },
 
-  post: function(httpRequest,httpResponse){
+  post: function(httpRequest,httpResponse){    
   httpResponse.send('Hello POST');
   },
 
