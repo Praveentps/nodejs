@@ -2,6 +2,7 @@ var express = require('express');
 var routes = require('../routes/routes')
 var app = express();
 var bodyParser = require("body-parser");
+var path = require('path');
 
 // Retrieve
 var mongoose = require('mongoose');
@@ -24,6 +25,7 @@ MongoClient.connect("mongodb://localhost:27017/MYDB", function(err, db) {
   console.log("We are connected");
   routes(app, db);
 });
+app.use('/public', express.static(path.join(__dirname + '/public')));
 
 var server = app.listen(3000, function() {
 
